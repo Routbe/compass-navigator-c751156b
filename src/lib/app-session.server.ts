@@ -11,10 +11,8 @@ export const APP_SESSION_COOKIE = "rout_session";
 const MAX_AGE_SECONDS = 60 * 60 * 24 * 30;
 
 function secret(): string {
-  const value =
-    process.env["APP_SESSION_SECRET"] ||
-    process.env["NEON_AUTH_COOKIE_SECRET"] ||
-    process.env["DATABASE_URL"];
+  // Never fall back to DATABASE_URL: a leaked DB URL must not let anyone forge sessions.
+  const value = process.env["APP_SESSION_SECRET"] || process.env["NEON_AUTH_COOKIE_SECRET"];
   if (!value) throw new Error("APP_SESSION_SECRET ontbreekt.");
   return value;
 }
