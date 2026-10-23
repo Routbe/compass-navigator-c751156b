@@ -43,3 +43,10 @@
 - [ ] Smart media autocomplete briefs (2 uploads) — not started, awaiting go-ahead
 - [x] Support page v2: Studio mode switcher, first-time tour, methods order, external brand links, 6 auto-shrunk photos, Bluesky/Mastodon photos, in-page Stripe (restricted keys only)
 - [ ] Stripe Connect (OAuth) to replace pasted restricted keys — later
+
+## Sprint 2026-10-23 (wacht op bevestiging sleutelrotatie)
+- [ ] Fase 1: sessieterugval DATABASE_URL weg, sessies wissen, testmodus-/redirect-fout Login met ROUT, accountkeuze, Connect ROUT-knop
+- [ ] Fase 2: segmented tabs, eigen icoontjes i.p.v. emoji's, inline instellingenicoon, pagina-wissel verbergen bij 1 pagina, profiel/steunpagina-wisselaar
+- [ ] Fase 3: console persoonlijk/workspace scope, app overdragen, onboarding-keuze
+- [ ] Fase 4: Anonieme vragen + Gastenboek, badges naast naam, showcase 1-op-1
+- [ ] Fase 5: admin handles/curatie, subdomein-tiers + fallback, badge/workspace-mails
