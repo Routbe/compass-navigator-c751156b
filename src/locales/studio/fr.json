@@ -397,5 +397,8 @@
   "studio.catalog.category.layout": "Mise en page et texte",
   "auth.footer.privacy": "Confidentialité",
   "auth.footer.terms": "Conditions",
-  "auth.footer.deletion": "Suppression des données"
+  "auth.footer.deletion": "Suppression des données",
+  "studio.mode.pages": "Gérer la page",
+  "studio.mode.profile": "Profil public",
+  "studio.mode.tip": "Page de soutien"
 }

@@ -397,5 +397,8 @@
   "studio.catalog.category.layout": "Indeling en tekst",
   "auth.footer.privacy": "Privacy",
   "auth.footer.terms": "Voorwaarden",
-  "auth.footer.deletion": "Gegevens verwijderen"
+  "auth.footer.deletion": "Gegevens verwijderen",
+  "studio.mode.pages": "Pagina beheren",
+  "studio.mode.profile": "Openbaar profiel",
+  "studio.mode.tip": "Steunpagina"
 }
