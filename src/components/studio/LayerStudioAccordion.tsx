@@ -1,7 +1,7 @@
 import { StudioSectionIcon } from "@/components/studio/StudioSectionIcon";
 import { useMemo, useState } from "react";
 import { STICKER_CATEGORIES } from "@/lib/sticker-library";
-import { ArrowDown, ArrowUp, Eye, EyeOff, GripVertical, Layers, Plus, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, Eye, EyeOff, GripVertical, Plus, Trash2 } from "lucide-react";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
