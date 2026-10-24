@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export type StudioSymbol = "profile" | "content" | "live" | "favorites" | "avatar" | "typography" | "footer" | "background" | "badges" | "questions" | "guestbook" | "settings" | "design" | "analytics" | "identity";
+export type StudioSymbol = "profile" | "content" | "live" | "favorites" | "avatar" | "typography" | "footer" | "background" | "badges" | "questions" | "guestbook" | "settings" | "design" | "analytics" | "identity" | "domain" | "bluesky" | "layers";
 const drawings: Record<StudioSymbol, string> = {
   profile: "M8 10a4 4 0 1 0 8 0 4 4 0 1 0-8 0M4 21c0-5 16-5 16 0",
   content: "M8 4H4v16h16v-4M10 14l8-8M14 4h6v6M8 10H6m2 4H6",
@@ -16,6 +16,9 @@ const drawings: Record<StudioSymbol, string> = {
   settings: "M4 6h16M4 12h16M4 18h16M8 3v6m8 0v6m-6 0v6",
   design: "M4 3h16v18H4Zm0 6h16M8 13h3v4H8Zm7-1v6m-2-3h4",
   analytics: "M3 3v18h18M7 17v-5m5 5V8m5 9V4M5 8l5-3 5 1 5-4",
+  domain: "M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18",
+  bluesky: "M12 11C10 7 6 4 4 5s0 7 3 8c-3 1-3 5 0 6s4-3 5-6c1 3 2 7 5 6s3-5 0-6c3-1 5-7 3-8s-6 2-8 6Z",
+  layers: "m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5",
   identity: "M3 5h18v14H3ZM6 10a2 2 0 1 0 4 0 2 2 0 1 0-4 0M5 16c0-3 6-3 6 0m3-7h4m-4 4h4",
 };
 

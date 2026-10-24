@@ -1026,8 +1026,8 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
               />
 
               {/* ⚙️ Geavanceerde Instellingen: alles wat geen pagina-inhoud is. */}
-              <p className="px-1 pt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                {t("studio.editor.advanced")}
+              <p className="flex items-center gap-2 px-1 pt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <StudioSectionIcon kind="settings" className="size-4" />{t("studio.editor.advanced")}
               </p>
               <AccordionItem
                 value="advanced_settings"
@@ -1764,7 +1764,7 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
                 className="rounded-2xl border border-border bg-card px-4 sm:px-5"
               >
                 <AccordionTrigger className="hover:no-underline">
-                  <span className="text-base font-medium">{t("studio.editor.domains")}</span>
+                  <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="domain" />{t("studio.editor.domains")}</span>
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pb-5">
                   <SubdomainPanel />
@@ -1778,9 +1778,7 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
                 className="rounded-2xl border border-border bg-card px-4 sm:px-5"
               >
                 <AccordionTrigger className="hover:no-underline">
-                  <span className="text-base font-medium">
-                    {t("studio.editor.bluesky")}
-                  </span>
+                  <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="bluesky" />{t("studio.editor.bluesky")}</span>
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pb-5">
                   <BlueskyWizard />

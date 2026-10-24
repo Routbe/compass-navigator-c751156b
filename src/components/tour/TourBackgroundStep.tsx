@@ -1,3 +1,4 @@
+import { StudioSectionIcon } from "@/components/studio/StudioSectionIcon";
 import { PROFILE_THEMES } from "@/lib/profile";
 import {
   BACKGROUND_STYLES,
@@ -40,7 +41,7 @@ export function TourBackgroundStep({
     <div className="space-y-6">
       <div className="space-y-2">
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
-          🖼️ {t("tour.background.title")}
+          <StudioSectionIcon kind="background" className="mr-2 inline size-6 align-[-4px]" />{t("tour.background.title")}
         </h2>
         <p className="text-sm text-muted-foreground">{t("tour.background.body")}</p>
       </div>
