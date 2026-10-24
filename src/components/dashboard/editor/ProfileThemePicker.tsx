@@ -17,6 +17,7 @@ import {
 } from "@/components/dashboard/DesignTabEditor";
 import { avatarFrameLabel } from "@/lib/avatar-frames";
 import { cn } from "@/lib/utils";
+import { StudioSectionIcon } from "@/components/studio/StudioSectionIcon";
 import {
   AVATAR_FRAMES,
   BACKGROUND_STYLES,
@@ -79,7 +80,7 @@ export function ProfileThemePicker({
       >
         <AccordionTrigger className="hover:no-underline">
           <span className="flex flex-1 items-center justify-between gap-3 pr-2">
-            <span className="text-base font-medium">👤 Avatar, Header &amp; Frames</span>
+            <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="avatar" />Avatar, Header &amp; Frames</span>
             <span className="rounded-full border border-border px-2 py-0.5 text-[10px] text-muted-foreground">
               {avatarFrameLabel(prefs.avatarFrame)}
             </span>
@@ -186,7 +187,7 @@ export function ProfileThemePicker({
       >
         <AccordionTrigger className="hover:no-underline">
           <span className="flex flex-1 items-center justify-between gap-3 pr-2">
-            <span className="text-base font-medium">🔘 Knoppen &amp; Typografie</span>
+            <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="typography" />Knoppen &amp; Typografie</span>
             <span className="rounded-full border border-border px-2 py-0.5 text-[10px] text-muted-foreground">
               {CARD_STYLES.find((c) => c.id === cardStyle)?.label ?? cardStyle}
             </span>
@@ -254,7 +255,7 @@ export function ProfileThemePicker({
       >
         <AccordionTrigger className="hover:no-underline">
           <span className="flex flex-1 items-center justify-between gap-3 pr-2">
-            <span className="text-base font-medium">🏷️ Footer &amp; Branding</span>
+            <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="footer" />Footer &amp; Branding</span>
           </span>
         </AccordionTrigger>
         <AccordionContent className="pb-5">
@@ -274,7 +275,7 @@ export function ProfileThemePicker({
       >
         <AccordionTrigger className="hover:no-underline">
           <span className="flex flex-1 items-center justify-between gap-3 pr-2">
-            <span className="text-base font-medium">🖼️ Achtergrond &amp; Visual FX</span>
+            <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="background" />Achtergrond &amp; Visual FX</span>
             <span className="rounded-full border border-border px-2 py-0.5 text-[10px] text-muted-foreground">
               {BACKGROUND_STYLES.find((o) => o.id === prefs.backgroundStyle)?.label ??
                 prefs.backgroundStyle}

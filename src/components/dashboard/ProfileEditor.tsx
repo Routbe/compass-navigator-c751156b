@@ -926,7 +926,7 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
         className="sticky top-14 z-20 flex w-full gap-1 overflow-x-auto rounded-2xl border border-border bg-card/95 p-1 backdrop-blur [scrollbar-width:none] supports-[backdrop-filter]:bg-card/80 [&::-webkit-scrollbar]:hidden"
       >
         {visibleTabs.map(({ id }) => (
-          <Button
+          <button
             key={id}
             role="tab"
             type="button"
@@ -934,15 +934,15 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
             title={t(`studio.tab.${id}`)}
             onClick={() => setTab(id)}
             className={cn(
-              "flex h-9 flex-1 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3 text-xs font-medium transition-colors",
+              "flex h-9 flex-1 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl border-0 px-3 text-xs shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               tab === id
-                ? "bg-foreground text-background"
-                : "text-muted-foreground hover:text-foreground",
+                ? "bg-foreground font-medium text-background"
+                : "bg-transparent text-muted-foreground hover:bg-secondary/60 hover:text-foreground",
             )}
           >
             <StudioSectionIcon kind={id === "links" ? "content" : id} className="size-4 text-current" />
             {t(`studio.tab.${id}`)}
-          </Button>
+          </button>
         ))}
       </div>
 
@@ -1026,8 +1026,8 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
               />
 
               {/* ⚙️ Geavanceerde Instellingen: alles wat geen pagina-inhoud is. */}
-              <p className="px-1 pt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                {t("studio.editor.advanced")}
+              <p className="flex items-center gap-2 px-1 pt-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <StudioSectionIcon kind="settings" className="size-4" />{t("studio.editor.advanced")}
               </p>
               <AccordionItem
                 value="advanced_settings"
@@ -1764,7 +1764,7 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
                 className="rounded-2xl border border-border bg-card px-4 sm:px-5"
               >
                 <AccordionTrigger className="hover:no-underline">
-                  <span className="text-base font-medium">{t("studio.editor.domains")}</span>
+                  <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="domain" />{t("studio.editor.domains")}</span>
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pb-5">
                   <SubdomainPanel />
@@ -1778,9 +1778,7 @@ export function ProfileEditor({ variant = "verified" }: { variant?: ProfileVaria
                 className="rounded-2xl border border-border bg-card px-4 sm:px-5"
               >
                 <AccordionTrigger className="hover:no-underline">
-                  <span className="text-base font-medium">
-                    {t("studio.editor.bluesky")}
-                  </span>
+                  <span className="flex min-w-0 items-center gap-2 text-base font-medium"><StudioSectionIcon kind="bluesky" />{t("studio.editor.bluesky")}</span>
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 pb-5">
                   <BlueskyWizard />

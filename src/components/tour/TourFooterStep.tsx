@@ -1,3 +1,4 @@
+import { StudioSectionIcon } from "@/components/studio/StudioSectionIcon";
 import { FOOTER_STYLES, type FooterStyle } from "@/lib/profile-display";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -31,7 +32,7 @@ export function TourFooterStep({
     <div className="space-y-6">
       <div className="space-y-2">
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
-          🏷️ {t("tour.footer.title")}
+          <StudioSectionIcon kind="footer" className="mr-2 inline size-6 align-[-4px]" />{t("tour.footer.title")}
         </h2>
         <p className="text-sm text-muted-foreground">{t("tour.footer.body")}</p>
       </div>

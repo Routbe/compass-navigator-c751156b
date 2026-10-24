@@ -397,5 +397,8 @@
   "studio.catalog.category.layout": "Layout und Text",
   "auth.footer.privacy": "Datenschutz",
   "auth.footer.terms": "Bedingungen",
-  "auth.footer.deletion": "Daten löschen"
+  "auth.footer.deletion": "Daten löschen",
+  "studio.mode.pages": "Seite verwalten",
+  "studio.mode.profile": "Öffentliches Profil",
+  "studio.mode.tip": "Unterstützungsseite"
 }
